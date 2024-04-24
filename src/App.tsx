@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Produtos from './containers/Produtos'
 
@@ -14,9 +13,6 @@ export type Produto = {
 }
 
 function App() {
-  const [produtos, setProdutos] = useState<Produto[]>([])
-  const [favoritos, setFavoritos] = useState<Produto[]>([])
-
   return (
     <Provider store={store}>
       <GlobalStyle />
